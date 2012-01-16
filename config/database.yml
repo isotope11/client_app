@@ -16,7 +16,6 @@ development:
 # Do not set this db to the same as development or production.
 test: &test
   adapter: postgresql
-  encoding: unicode
   database: client_app_test
 
 production:
