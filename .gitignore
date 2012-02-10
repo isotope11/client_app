@@ -18,3 +18,5 @@ Gemfile.lock
 /public/system
 
 /coverage
+
+/config/database.yml
