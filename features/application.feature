@@ -58,6 +58,7 @@ Feature: Application
     When I follow "Delete"
     Then I should see "Client Application successfully deleted"
   
+  @wip
   Scenario: An admin should be able to finish an application
     Given I am on an application's edit page
     And I check "client_application_business_license"
