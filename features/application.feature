@@ -57,7 +57,7 @@ Feature: Application
     And I am on the client applications index page
     When I follow "Delete"
     Then I should see "Client Application successfully deleted"
-  
+
   @wip
   Scenario: An admin should be able to finish an application
     Given I am on an application's edit page
