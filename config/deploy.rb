@@ -44,6 +44,12 @@ namespace :deploy do
   task :symlink_shared, :roles => :app do
     run "ln -nfs #{shared_path}/config/database.yml #{current_path}/config/database.yml"
   end
+
+  desc "Precompile assets"
+  task :precompile_assets, :roles => :app do
+    run "cd #{release_path}; RAILS_ENV=production bundle exec rake assets:precompile"
+  end
 end
 
-before 'deploy:assets:precompile', 'deploy:symlink_shared'
+after 'deploy:update_code', 'deploy:precompile_assets'
+before 'deploy:precompile_assets', 'deploy:symlink_shared'
