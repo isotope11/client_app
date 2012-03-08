@@ -35,3 +35,6 @@ rake db:test:prepare
 TODO Before Deploy:
 change email addresses in mailer
 change api location for xrono
+
+
+HAHA, Business!
