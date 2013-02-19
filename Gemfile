@@ -33,7 +33,7 @@ group :test do
   gem 'ruby-debug19'
   gem 'database_cleaner'
   gem 'rails3-generators' #mainly for factory_girl & simple_form at this point
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 2.12.2'
   gem 'factory_girl_rails'
   gem 'cucumber-rails'
   gem 'capybara'

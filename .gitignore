@@ -19,3 +19,8 @@ Gemfile.lock
 
 /coverage
 
+
+# Vim
+*~
+*.swp
+*.swo
